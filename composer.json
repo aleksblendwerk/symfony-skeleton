@@ -102,7 +102,6 @@
             "@composer normalize --ansi --dry-run",
             "symfony console lint:twig templates --ansi",
             "symfony console lint:yaml config --ansi",
-            "symfony console lint:container --ansi",
             "symfony console doctrine:schema:validate --ansi --skip-sync",
             "@lint",
             "@phpcs",
