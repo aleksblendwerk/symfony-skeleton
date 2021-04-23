@@ -99,7 +99,7 @@
         "phpunit": "bin/phpunit --colors=always",
         "phpunit-install": "bin/phpunit install",
         "qa": [
-            "@composer normalize --ansi --dry-run --indent-size 4 --indent-style space",
+            "@composer normalize --ansi --dry-run",
             "symfony console lint:twig templates --ansi",
             "symfony console lint:yaml config --ansi",
             "symfony console lint:container --ansi",
