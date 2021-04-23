@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+
+    <arg name="basepath" value="."/>
+    <arg name="cache" value=".phpcs-cache"/>
+    <arg name="colors"/>
+    <arg name="extensions" value="php"/>
+
+    <config name="ignore_warnings_on_exit" value="1"/>
+
+    <rule ref="BlendwerkCodingStandard"/>
+
+    <file>bin/</file>
+    <file>public/</file>
+    <file>src/</file>
+    <file>tests/</file>
+
+    <!-- exclude files created by symfony! -->
+    <exclude-pattern>bin/.phpunit/</exclude-pattern>
+    <exclude-pattern>public/index.php</exclude-pattern>
+    <exclude-pattern>src/Kernel.php</exclude-pattern>
+    <exclude-pattern>tests/bootstrap.php</exclude-pattern>
+</ruleset>
